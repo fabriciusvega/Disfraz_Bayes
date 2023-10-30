@@ -1,0 +1,56 @@
+#                 UNIVERSIDAD NACIONAL AUTONOMA DE MEXICO
+#                           FACULTAD DE CIENCIAS
+#                              SISTEMATICA II
+
+# CODIGO ELABORADO POR: Fabricio R. Vega Ovando
+#       ¿CUÁNTOS ESTUDIANTES SE DISFRAZARÁN PARA EL RETO DE DISFRACES?
+
+# En este codigo de R calcularemos la probabilidad de que los alumnos de
+# Sistematica II se disfracen de algo filogenetico/R para el reto03
+
+# Probabilidad a priori de ganar el reto, somos 17 estudiantes inscritos
+P_A <- 1/17
+
+# Probabilidad de estar disfrazado, estas disfrazado o no 50/50
+P_B <- 0.5
+
+# Probabilidad de estar disfrazado dado que has ganado el concurso, si estas
+# disfrazado de algo filogenetico/R es una certeza que ganas el reto
+P_B_dado_A <- 1
+
+# Aplicación del Teorema de Bayes para calcular la probabilidad de 
+# ganar el reto dado que estás disfrazado
+P_A_dado_B <- (P_B_dado_A * P_A) / P_B
+
+# Calcular el número de participantes que se disfrazan para ganar el 
+# reto
+Estudiantes_disfrazados <- round(P_A_dado_B * 17)
+
+# Imprimir el resultado en la consola
+cat("La probabilidad de que los participantes se disfracen para ganar el reto03 es:", P_A_dado_B, "\n")
+cat("Por lo tanto", Estudiantes_disfrazados, "estudiantes se disfrazarán para el reto03", "\n")
+
+#                @@@@@@
+#           @@@@@&    /@@@%
+#        .@@.             @@@
+#       @@                  @@@@
+#     *@@                       @@@@.
+#    /@(                            ,@@@@@,
+#   .@%                                   .@@@@@@@@@@@(
+#   @@                                                &@@@
+#   @#              CODIGO ELABORADO POR:                 @@@
+#  *@,           Fabricio Rafael Vega Ovando                /@&
+#  *@,                                                        @@
+#  .@(                                                         @@
+#   @@                                                         ,@/
+#   %@.    #@@@.                                                @@
+#    @@   @@  ,@(            .@@@@&@@@@@@@@@@@@@@@@@@@@@&,      @@
+#    .@@   @@@@@         @@@@@%,                        .&@@@.  %@
+#     *@&             @@@                                    @@@@@
+#      ,@@            @@                                      &@
+#        @@@@@@#*.@@@@@ @@@@  @@%@@@                         .@@
+#             (@@#   @@ @@*,@@@@@@@@@@@                   .@@&
+#             @@     #@                #@@@@@@@@@@@@@@&(
+#              @@     @@@@@@@             .@@@
+#               @#          /@@              (&@@@@@
+#                @            @                   @@
